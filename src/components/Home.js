@@ -10,7 +10,8 @@ const Home = (props) => {
   }
 	return (
 		<>
-			<h2>Please login to see these spooky creations</h2>
+      <h2>Welcome to the Monster Menagerie!</h2>
+			<h5>Please login to see these spooky creations</h5>
 		</>
 	)
 }

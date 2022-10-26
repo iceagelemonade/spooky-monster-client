@@ -48,7 +48,7 @@ const App = () => {
 		return (
 			<Fragment>
 				<Header user={user} />
-        <div className='container-md mt-3'>
+        <div className='container-fluid mt-3'>
 				  <Routes>
 				  	<Route path='/' element={<Home msgAlert={msgAlert} user={user} />} />
 				  	<Route

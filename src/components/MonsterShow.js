@@ -31,9 +31,11 @@ const MonsterShow = ({ user, msgAlert }) => {
     setMonster({ ...monster, [evt.target.name]: evt.target.value })
 }
 
-  const handleUpdateMonster = () => {
+  const handleUpdateMonster = (event) => {
+    event.preventDefault()
     monsterUpdate(monster, user, id)
       .then(() => {
+        toggleShowUpdate()
         msgAlert({
           heading: 'Success',
           message: 'This monster has been re-formed',
